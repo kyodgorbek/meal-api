@@ -1,0 +1,5 @@
+title: Your Site Title
+description: A brief description of your site
+baseurl: "/meal-api"   # This is the subpath of your site (the repository name)
+url: "https://kyodgorbek.github.io"   # This is the base hostname & protocol
+theme: jekyll-theme-cayman
