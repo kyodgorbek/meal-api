@@ -1,9 +1,16 @@
-# _config.yml
 title: My Jekyll Site
 description: A website built with Jekyll and hosted on GitHub Pages
-baseurl: ""  # If deployed to GitHub Pages root, leave it empty
-url: "https://username.github.io"  # Replace 'username' with your GitHub username
-theme: jekyll-theme-primer  # You can change the theme if desired
+baseurl: ""  # If deployed to GitHub Pages root, leave it empty. For custom domain, put "/subfolder"
+url: "https://kyodgorbek.github.io"  # Replace 'username' with your GitHub username
 
-# Optionally, you can add Google Analytics or other settings below:
+theme: jekyll-theme-primer  # You can choose another theme or keep this
+
+# Set source directory to docs
+source: ./docs  # This points to the docs folder
+
+# Enabling SCSS
+sass:
+  style: compressed
+
+# Other settings (e.g., for Google Analytics)
 # google_analytics: UA-XXXXXXXXX
