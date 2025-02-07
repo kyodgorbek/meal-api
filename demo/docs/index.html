@@ -1,14 +1,25 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ site.title }}</title>
-    <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 </head>
 <body>
-<h1>{{ site.title }}</h1>
-<p>Click below to view the OpenAPI JSON file:</p>
-<a href="{{ site.baseurl }}/openapi.json" target="_blank">openapi.json</a>
+<header>
+    <h1>Welcome to {{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+</header>
+
+<main>
+    <h2>About this site</h2>
+    <p>This site is built using Jekyll and hosted on GitHub Pages. You can customize it by modifying the files and pushing your changes to GitHub.</p>
+</main>
+
+<footer>
+    <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+</footer>
 </body>
 </html>

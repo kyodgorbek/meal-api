@@ -1,5 +1,9 @@
-title: "Your Site Title"
-description: "A brief description of your site"
-baseurl: "/meal-api"   # This is the subpath of your site (the repository name)
-url: "https://kyodgorbek.github.io"   # This is the base hostname & protocol
-theme: jekyll-theme-cayman
+# _config.yml
+title: My Jekyll Site
+description: A website built with Jekyll and hosted on GitHub Pages
+baseurl: ""  # If deployed to GitHub Pages root, leave it empty
+url: "https://username.github.io"  # Replace 'username' with your GitHub username
+theme: jekyll-theme-primer  # You can change the theme if desired
+
+# Optionally, you can add Google Analytics or other settings below:
+# google_analytics: UA-XXXXXXXXX
