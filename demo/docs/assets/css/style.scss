@@ -1,156 +1,38 @@
-// Importing Jekyll theme and Primer components
-@import "jekyll-theme-primer";
-@import "primer-support/index.scss";
-@import "primer-base/index.scss";
-@import "primer-utilities/index.scss";
-@import "primer-layout/index.scss";
+// style.scss
 
-// Variables for custom colors
-$status-pending:    color.adjust($yellow-700, $saturation: -15%) !default;
-$repo-private-icon: color.adjust($yellow-900, $alpha: -50%) !default;
-$border-green-light: color.adjust($green-300, $saturation: -40%) !default;
-$border-red-light:   color.adjust($red-300, $saturation: -60%) !default;
-$border-yellow:      color.adjust($yellow-300, $saturation: -60%) !default;
+// Set some basic variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Arial', sans-serif;
 
-// Global styles
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: $bg-body;
-  color: $text-color;
+// Reset default styles
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-// Styling links
-a {
-  color: $link-color;
-  text-decoration: none;
-
-  &:hover {
-    color: $link-hover-color;
-  }
+body {
+  font-family: $font-family;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-// Header styles
 header {
-  background-color: $header-bg;
-  padding: 20px;
-  color: $header-text-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-// Footer styles
-footer {
-  background-color: $footer-bg;
+  background-color: $primary-color;
+  color: white;
   padding: 20px;
   text-align: center;
-  color: $footer-text-color;
 }
 
-// Button styles
-.btn {
-  background-color: $btn-bg;
-  color: $btn-text-color;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-
-  &:hover {
-    background-color: $btn-hover-bg;
-  }
+h1 {
+  font-size: 2.5em;
 }
 
-// Card component
-.card {
-  background-color: $card-bg;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
-  .card-header {
-    font-size: 1.5rem;
-    color: $card-header-text-color;
-  }
-
-  .card-body {
-    font-size: 1rem;
-    color: $card-body-text-color;
-  }
-}
-
-// Utility classes
-.m-2 {
-  margin: 2px;
-}
-
-.mt-3 {
-  margin-top: 3px;
-}
-
-.p-4 {
-  padding: 4px;
-}
-
-// Custom styles for the homepage
-.homepage {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-
-  .hero {
-    background-color: $hero-bg;
-    color: $hero-text-color;
-    padding: 50px;
-    text-align: center;
-
-    h1 {
-      font-size: 3rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-    }
-  }
-
-  .features {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    margin-top: 30px;
-
-    .feature-card {
-      background-color: $feature-card-bg;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
-      h3 {
-        font-size: 1.25rem;
-        color: $feature-card-header-text-color;
-      }
-
-      p {
-        font-size: 1rem;
-        color: $feature-card-body-text-color;
-      }
-    }
-  }
-}
-
-// Responsive styles for mobile
-@media (max-width: 768px) {
-  .features {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .features {
-    grid-template-columns: 1fr;
-  }
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: $secondary-color;
+  color: white;
 }
