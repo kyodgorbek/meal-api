@@ -1,16 +1,16 @@
 title: My Jekyll Site
 description: A website built with Jekyll and hosted on GitHub Pages
-baseurl: ""  # If deployed to GitHub Pages root, leave it empty. For custom domain, put "/subfolder"
-url: "https://kyodgorbek.github.io"  # Replace 'username' with your GitHub username
+baseurl: ""  # Leave empty if deployed to GitHub Pages root, or set to "/subfolder" for custom domains
+url: "https://yourusername.github.io"  # Replace with your GitHub username or custom domain
 
-theme: jekyll-theme-primer  # You can choose another theme or keep this
+theme: jekyll-theme-primer  # Optional: Choose a different theme or keep the default
 
-# Set source directory to docs
-source: ./docs  # This points to the docs folder
+source: "./docs"  # Ensure this points to the correct source folder for your content
 
-# Enabling SCSS
 sass:
-  style: compressed
+  style: compressed  # Optional: Compresses the CSS output
+  load_paths:
+    - "assets/css"  # This ensures the SCSS files in this folder are available to Jekyll
 
-# Other settings (e.g., for Google Analytics)
-# google_analytics: UA-XXXXXXXXX
+# Uncomment to enable Google Analytics (or any other integrations)
+# google_analytics: "UA-XXXXXXXXX"
